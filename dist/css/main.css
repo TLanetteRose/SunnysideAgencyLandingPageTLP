@@ -337,4 +337,32 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 1px solid black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.8rem;
+  color: #23303e;
 }/*# sourceMappingURL=main.css.map */
