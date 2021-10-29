@@ -15,6 +15,10 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    height: 100%;
+}
+
 a {
     font-family: $body-font-family;
     text-decoration: none;
