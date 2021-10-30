@@ -1,8 +1,27 @@
 footer {
-    grid-area: footer;
     height: 35rem;
     width: 100%;
     background-color: $footer-color;
+    @include flex (column, space-between, center);
+
+    .footer__container {
+        margin-top: 5rem;
+
+        .footer-logo {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer__nav {
+            @include flex (row, space-between, center);
+            padding: 4rem 0;
+        }
+
+        .social__icons {
+            @include flex (row, space-between, center);
+            padding: 4rem 0;
+        }
+    }
 }
 
 

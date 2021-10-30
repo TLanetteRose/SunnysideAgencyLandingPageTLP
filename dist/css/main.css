@@ -365,6 +365,11 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
 .wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -376,6 +381,15 @@ body {
   font-family: "Barlow", sans-serif;
   font-size: 1.8rem;
   color: #23303e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces", serif;
 }
 
 .main .main-content {
@@ -459,10 +473,34 @@ body {
 }
 
 footer {
-  grid-area: footer;
   height: 35rem;
   width: 100%;
   background-color: #85eace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer__container {
+  margin-top: 5rem;
+}
+footer .footer__container .footer-logo {
+  padding: 2rem;
+  text-align: center;
+}
+footer .footer__container .footer__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+}
+footer .footer__container .social__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
 }
 
 .attribution {
@@ -556,6 +594,47 @@ header {
 @media only screen and (min-width: 768px) {
   header {
     background-image: url(/images/desktop/image-header.jpg);
+  }
+}
+header .header-tagline {
+  padding-top: 8rem;
+  position: relative;
+}
+header .header-tagline .tagline {
+  text-align: center;
+  text-transform: uppercase;
+}
+header .header-tagline .arrow {
+  position: absolute;
+  transform: translateX(145px);
+}
+header .navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar .nav-menu {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  header .navbar .nav-menu {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+}
+header .navbar .hamburger-btn {
+  display: block;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1024px) {
+  header .navbar .hamburger-btn {
+    display: none;
   }
 }
 
