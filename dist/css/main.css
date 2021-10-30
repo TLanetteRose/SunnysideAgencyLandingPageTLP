@@ -606,7 +606,9 @@ header .header-tagline .tagline {
 }
 header .header-tagline .arrow {
   position: absolute;
-  transform: translateX(145px);
+  right: 50%;
+  top: 120%;
+  transform: translateX(50%);
 }
 header .navbar {
   width: 100%;
