@@ -388,13 +388,13 @@ body {
   .main__content .brand {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    max-height: 60rem;
+    max-height: 50rem;
   }
 }
 .main__content .brand-image {
   background: url(/images/mobile/image-transform.jpg) no-repeat center center;
   background-size: cover;
-  height: 31.2rem;
+  min-height: 31.2rem;
 }
 .main__content .audience {
   display: grid;
@@ -412,7 +412,7 @@ body {
 .main__content .audience-image {
   background: url(/images/mobile/image-stand-out.jpg) no-repeat center center;
   background-size: cover;
-  height: 31.2rem;
+  min-height: 31.2rem;
 }
 .main__content .main-image {
   width: 100%;
@@ -471,7 +471,6 @@ footer {
 }
 
 header {
-  grid-area: header;
   min-height: 80vh;
   width: 100%;
   color: white;
