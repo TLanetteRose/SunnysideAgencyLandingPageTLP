@@ -10,7 +10,7 @@ Started by changing the images used for the testimonial section. I wanted to see
 
 ### 10/30/2021
 
-Back again. Today I'm setting up the grid for the page. I've made five sections with the main content section becoming an inner grid. I'm using a grid-generator to help.
+Back again. Today I'm setting up the grid for the page. I've made five sections with the main content section becoming an inner grid. I'm using a grid-generator to help... Decided to only use grid on the gallery section. 
 
 I used an image color picker to add background color to sections that had images. I added left and right padding to leave spaces on the edge of the page. This way the background will extend to the outsides.
 
