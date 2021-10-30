@@ -371,6 +371,10 @@ body {
   color: #23303e;
 }
 
+footer {
+  background-color: #458c7e;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -383,6 +387,7 @@ body {
 header {
   width: 100%;
   height: 54rem;
+  color: white;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -392,4 +397,10 @@ header {
   header {
     background-image: url(../../images/desktop/image-header.jpg);
   }
+}
+
+.testimonials .client-image {
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */
