@@ -1,6 +1,27 @@
 .testimonials {
-    grid-area: testimonials;
+    @include flex (column, center, center);
+    padding: 3rem 1rem 2rem 1rem;
+    text-align: center;
+
+    @media only screen and (min-width: 1024px){
+        height: 76.7rem;
+    }
+
+    &-title {
+        margin-bottom: 4rem;
+    }
+
+    &__container {
+        @media only screen and (min-width: 1024px) {
+            @include flex (row, center, center);
+            height: 45.7rem;
+        }
+    }
     .client {
+        @include flex (column, space-between, center);
+        text-align: center;
+        margin-bottom: 3rem;
+        
         &-image {
             width: 7.2rem;
             height: 7.2rem;

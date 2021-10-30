@@ -1,3 +1,15 @@
 .gallery-grid {
-    grid-area: gallery;
+    height: 37.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "milk grapefruit"
+        "cones sugar";
+    
+    @media only screen and (min-width: $bp-tablet-end) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        height: 44.7rem;
+    }
 }
