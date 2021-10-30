@@ -4,12 +4,62 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-        "milk grapefruit"
-        "cones sugar";
+        "milk cutorange"
+        "cone sugar";
     
-    @media only screen and (min-width: $bp-tablet-end) {
+    @media only screen and (min-width: 1024px) {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
-        height: 44.7rem;
+        grid-template-areas: 
+        "milk cutorange cone sugar";
+        height: 44rem;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    &--image:first-of-type{
+        grid-area: milk;
+        background: url(/images/mobile/image-gallery-milkbottles.jpg) no-repeat center center;
+        background-size: cover;
+
+        @media only screen and (min-width: 1024px) {
+            background: url(/images/desktop/image-gallery-milkbottles.jpg) no-repeat center center;
+            background-size: cover;
+        }
+    }
+
+    &--image:nth-of-type(2) {
+        grid-area: cutorange;
+        background: url(/images/mobile/image-gallery-orange.jpg) no-repeat center center;
+        background-size: cover;
+
+        @media only screen and (min-width: 1024px) {
+            background: url(/images/desktop/image-gallery-orange.jpg) no-repeat center center;
+            background-size: cover;
+        }
+    }
+
+    &--image:nth-of-type(3) {
+        grid-area: cone;
+        background: url(/images/mobile/image-gallery-cone.jpg) no-repeat center center;
+        background-size: cover;
+
+        @media only screen and (min-width: 1024px) {
+            background: url(/images/desktop/image-gallery-cone.jpg) no-repeat center center;
+            background-size: cover;
+        }
+    }
+
+    &--image:nth-of-type(4) {
+        grid-area: sugar;
+        background: url(/images/mobile/image-gallery-sugar-cubes.jpg) no-repeat center center;
+        background-size: cover;
+
+        @media only screen and (min-width: 1024px) {
+            background: url(/images/desktop/image-gallery-sugarcubes.jpg) no-repeat center center;
+            background-size: cover;
+        }
     }
 }
