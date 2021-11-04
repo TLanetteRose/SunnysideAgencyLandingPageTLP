@@ -17,3 +17,11 @@ I used an image color picker to add background color to sections that had images
 Resources:
 
 - (Image Color Picker )[https://imagecolorpicker.com/]
+
+### 11/04/2021
+
+I'm back. I had parent conferences this week, so my coding time has been less often.
+
+Resources:
+
+- (Commonly Used Breakpoints by George Moller)[https://twitter.com/_georgemoller/status/1455958400714555394?s=20]
