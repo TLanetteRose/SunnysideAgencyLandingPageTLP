@@ -1,3 +1,50 @@
+/*@mixin mobile-breakpoint {
+    @media screen and (min-width: $bp-mobile-start) and (max-width: $bp-mobile-end) {
+        @content;
+    }
+}
+
+@mixin tablet-breakpoint {
+    @media screen and (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+        @content;
+    }
+}
+
+@mixin notebook-breakpoint {
+    @media screen and (min-width: $bp-notebook-start) and (max-width: $bp-notebook-end) {
+        @content;
+    }
+}
+
+@mixin lg-screen-breakpoint {
+    @media screen and (min-width: $bp-lg-screen-start) and (max-width: $bp-lg-screen-end) {
+        @content;
+    }
+}
+
+@mixin xl-breakpoint {
+    @media screen and (min-width: $bp-xl-screen-start) and (max-width: $bp-xl-screen-end) {
+        @content;
+    }
+}
+
+@mixin xxl-breakpoint {
+    @media screen and (min-width: $bp-xxl-screen-start) and (max-width: $bp-xxl-screen-end) {
+        @content;
+    }
+}*/
+/*$bp-mobile-start: 320px;
+$bp-mobile-end: 480px;
+$bp-tablet-start: 481px;
+$bp-tablet-end: 768px;
+$bp-notebook-start: 769px;
+$bp-notebook-end: 1024px;
+$bp-lg-screen-start: 1025px;
+$bp-lg-screen-end: 1200px;
+$bp-xl-screen-start: 1201px;
+$bp-xl-screen-end: 1440px;
+$bp-xxl-screen-start: 1441px;
+$bp-xxl-screen-end: 1920px;*/
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */

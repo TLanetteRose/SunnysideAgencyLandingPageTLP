@@ -8,7 +8,7 @@ header {
     background-size: cover;
     background-position: center center;
 
-    @media only screen and (max-width: $bp-mobile){
+    @media only screen and (max-width: $bp-mobile) {
         height: 54rem;
         background-image: url(/images/mobile/image-header.jpg);
     }
@@ -33,12 +33,12 @@ header {
             transform: translateX(50%);
         }
     }
-    
+
 
     .navbar {
         width: 100%;
         @include flex (row, space-between, center);
-    
+
         .nav-menu {
             display: none;
 
