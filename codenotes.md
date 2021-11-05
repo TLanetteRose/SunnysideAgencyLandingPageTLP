@@ -18,10 +18,12 @@ Resources:
 
 - (Image Color Picker )[https://imagecolorpicker.com/]
 
-### 11/04/2021
+### 11/05/2021
 
-I'm back. I had parent conferences this week, so my coding time has been less often.
+I'm back. I had parent conferences this week, so my coding time has been less often. I saw an interesting Tweet about responsive breakpoints. It expands on the breakpoints I've used before. I'm going to try to adjust my breakpoints using these guidelines. I need to adjust the content section again.
 
 Resources:
 
 - (Commonly Used Breakpoints by George Moller)[https://twitter.com/_georgemoller/status/1455958400714555394?s=20]
+
+* (Screen Size Map)[https://screensizemap.com/]: A screen size map that compares viewport sizes in device-independed pixel to plan reponsive and fluid ayouts.

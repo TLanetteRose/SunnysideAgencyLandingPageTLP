@@ -9,49 +9,50 @@
             grid-template-rows: 1fr;
         }
 
-       &--image {
-           width: 100%;
-           @media only screen and (max-width: $bp-mobile) {
-               height: 32rem;
-           }
+        &--image {
+            width: 100%;
 
-           @media only screen and (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
-               height: 50rem;
-           }
+            @media only screen and (max-width: $bp-mobile) {
+                height: 32rem;
+            }
 
-           @media only screen and (min-width: $bp-desktop) {
-               height: 60rem;
-           }
-       } 
+            @media only screen and (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                height: 50rem;
+            }
 
-       &--text {
-           text-align: center;
+            @media only screen and (min-width: $bp-desktop) {
+                height: 60rem;
+            }
+        }
 
-           @media only screen and (max-width: $bp-mobile) {
-               height: 32rem;
-           }
+        &--text {
+            text-align: center;
 
-           @media only screen and (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
-               height: 50rem;
-           }
+            @media only screen and (max-width: $bp-mobile) {
+                height: 32rem;
+            }
 
-           @media only screen and (min-width: $bp-desktop) {
-               height: 60rem;
-           }
+            @media only screen and (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                height: 50rem;
+            }
 
-       }
+            @media only screen and (min-width: $bp-desktop) {
+                height: 60rem;
+            }
 
-    
-       .brand-image {
-           background: url(/images/mobile/image-transform.jpg) no-repeat center center;
-           background-size: cover;  
+        }
+
+
+        .brand-image {
+            background: url(/images/mobile/image-transform.jpg) no-repeat center center;
+            background-size: cover;
         }
 
         .audience-image {
             background: url(/images/mobile/image-stand-out.jpg) no-repeat center center;
             background-size: cover;
         }
-       
+
 
         &--services {
             width: 100%;
@@ -62,7 +63,7 @@
         .graphics {
             background: url(/images/mobile/image-graphic-design.jpg) no-repeat center center;
             background-size: cover;
-            
+
 
             @media only screen and (min-width: 1024px) {
                 background: url(/images/desktop/image-graphic-design.jpg) no-repeat center center;
