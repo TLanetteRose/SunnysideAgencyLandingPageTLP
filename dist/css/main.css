@@ -425,11 +425,13 @@ h6 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "brand-image" "brand-text" "audience-image" "audience-text";
 }
 @media only screen and (min-width: 768px) {
   .main .main-content {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    grid-template-areas: "brand-text brand-image" "audience-image audience-text";
   }
 }
 .main .main-content--image {
@@ -452,6 +454,10 @@ h6 {
 }
 .main .main-content--text {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .main .main-content--text {
@@ -461,6 +467,7 @@ h6 {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .main .main-content--text {
     height: 50rem;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -468,7 +475,14 @@ h6 {
     height: 60rem;
   }
 }
+.main .main-content--text .main-content--title {
+  padding: 2rem;
+}
+.main .main-content--text .main-content--description {
+  padding: 2rem;
+}
 .main .main-content .brand-image {
+  grid-area: brand-image;
   background: url(/images/mobile/image-transform.jpg) no-repeat center center;
   background-size: cover;
 }
@@ -479,6 +493,7 @@ h6 {
   }
 }
 .main .main-content .audience-image {
+  grid-area: audience-image;
   background: url(/images/mobile/image-stand-out.jpg) no-repeat center center;
   background-size: cover;
 }
@@ -487,6 +502,12 @@ h6 {
     background: url(/images/desktop/image-stand-out.jpg) no-repeat center center;
     background-size: cover;
   }
+}
+.main .main-content .brand-text {
+  grid-area: brand-text;
+}
+.main .main-content .audience-text {
+  grid-area: audience-text;
 }
 .main .main-content--services {
   width: 100%;
