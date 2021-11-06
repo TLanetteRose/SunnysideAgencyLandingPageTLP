@@ -1,10 +1,4 @@
-/*@mixin mobile-breakpoint {
-    @media screen and (min-width: $bp-mobile-start) and (max-width: $bp-mobile-end) {
-        @content;
-    }
-}
-
-@mixin tablet-breakpoint {
+/*@mixin tablet-breakpoint {
     @media screen and (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
         @content;
     }
@@ -453,7 +447,7 @@ h6 {
 .main .main-content--image {
   width: 100%;
 }
-@media only screen and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .main .main-content--image {
     height: 32rem;
   }
@@ -471,7 +465,7 @@ h6 {
 .main .main-content--text {
   text-align: center;
 }
-@media only screen and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .main .main-content--text {
     height: 32rem;
   }
@@ -632,7 +626,7 @@ header {
   background-size: cover;
   background-position: center center;
 }
-@media only screen and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   header {
     height: 54rem;
     background-image: url(/images/mobile/image-header.jpg);

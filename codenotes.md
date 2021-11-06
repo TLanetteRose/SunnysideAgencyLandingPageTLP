@@ -26,4 +26,8 @@ Resources:
 
 - (Commonly Used Breakpoints by George Moller)[https://twitter.com/_georgemoller/status/1455958400714555394?s=20]
 
-* (Screen Size Map)[https://screensizemap.com/]: A screen size map that compares viewport sizes in device-independed pixel to plan reponsive and fluid ayouts.
+- (Screen Size Map)[https://screensizemap.com/]: A screen size map that compares viewport sizes in device-independed pixel to plan reponsive and fluid ayouts.
+
+### 11/06/2021
+
+Happy Saturday! I'm back to code. I decided not to use the other breakpoints. 

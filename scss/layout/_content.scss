@@ -12,7 +12,7 @@
         &--image {
             width: 100%;
 
-            @media only screen and (max-width: $bp-mobile) {
+            @include mobile-breakpoint {
                 height: 32rem;
             }
 
@@ -28,7 +28,7 @@
         &--text {
             text-align: center;
 
-            @media only screen and (max-width: $bp-mobile) {
+            @include mobile-breakpoint {
                 height: 32rem;
             }
 

@@ -8,7 +8,7 @@ header {
     background-size: cover;
     background-position: center center;
 
-    @media only screen and (max-width: $bp-mobile) {
+    @include mobile-breakpoint {
         height: 54rem;
         background-image: url(/images/mobile/image-header.jpg);
     }
