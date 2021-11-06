@@ -1,22 +1,4 @@
-/*@mixin mobile-breakpoint {
-    @media screen and (min-width: $bp-mobile-start) and (max-width: $bp-mobile-end) {
-        @content;
-    }
-}
-
-@mixin tablet-breakpoint {
-    @media screen and (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
-        @content;
-    }
-}
-
-@mixin notebook-breakpoint {
-    @media screen and (min-width: $bp-notebook-start) and (max-width: $bp-notebook-end) {
-        @content;
-    }
-}
-
-@mixin lg-screen-breakpoint {
+/*@mixin lg-screen-breakpoint {
     @media screen and (min-width: $bp-lg-screen-start) and (max-width: $bp-lg-screen-end) {
         @content;
     }
@@ -443,56 +425,88 @@ h6 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "brand-image" "brand-text" "audience-image" "audience-text";
 }
 @media only screen and (min-width: 768px) {
   .main .main-content {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    grid-template-areas: "brand-text brand-image" "audience-image audience-text";
   }
 }
 .main .main-content--image {
   width: 100%;
 }
-@media only screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .main .main-content--image {
     height: 32rem;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .main .main-content--image {
     height: 50rem;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .main .main-content--image {
     height: 60rem;
   }
 }
 .main .main-content--text {
   text-align: center;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-@media only screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .main .main-content--text {
     height: 32rem;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .main .main-content--text {
     height: 50rem;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .main .main-content--text {
     height: 60rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .main .main-content--text {
+    text-align: left;
+  }
+}
 .main .main-content .brand-image {
+  grid-area: brand-image;
   background: url(/images/mobile/image-transform.jpg) no-repeat center center;
   background-size: cover;
 }
+@media screen and (min-width: 1024px) {
+  .main .main-content .brand-image {
+    background: url(/images/desktop/image-transform.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
 .main .main-content .audience-image {
+  grid-area: audience-image;
   background: url(/images/mobile/image-stand-out.jpg) no-repeat center center;
   background-size: cover;
+}
+@media screen and (min-width: 1024px) {
+  .main .main-content .audience-image {
+    background: url(/images/desktop/image-stand-out.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+.main .main-content .brand-text {
+  grid-area: brand-text;
+}
+.main .main-content .audience-text {
+  grid-area: audience-text;
 }
 .main .main-content--services {
   width: 100%;
@@ -502,7 +516,7 @@ h6 {
   background: url(/images/mobile/image-graphic-design.jpg) no-repeat center center;
   background-size: cover;
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .main .main-content .graphics {
     background: url(/images/desktop/image-graphic-design.jpg) no-repeat center center;
     background-size: cover;
@@ -512,7 +526,7 @@ h6 {
   background: url(/images/mobile/image-photography.jpg) no-repeat center center;
   background-size: cover;
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .main .main-content .photography {
     background: url(/images/desktop/image-photography.jpg) no-repeat center center;
     background-size: cover;
@@ -566,7 +580,12 @@ footer .footer__container .social__icons {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "milk cutorange" "cone sugar";
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 520px) and (max-width: 768px) {
+  .gallery-grid {
+    height: 50rem;
+  }
+}
+@media screen and (min-width: 1024px) {
   .gallery-grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -582,7 +601,7 @@ footer .footer__container .social__icons {
   background: url(/images/mobile/image-gallery-milkbottles.jpg) no-repeat center center;
   background-size: cover;
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .gallery-grid--image:first-of-type {
     background: url(/images/desktop/image-gallery-milkbottles.jpg) no-repeat center center;
     background-size: cover;
@@ -593,7 +612,7 @@ footer .footer__container .social__icons {
   background: url(/images/mobile/image-gallery-orange.jpg) no-repeat center center;
   background-size: cover;
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .gallery-grid--image:nth-of-type(2) {
     background: url(/images/desktop/image-gallery-orange.jpg) no-repeat center center;
     background-size: cover;
@@ -604,7 +623,7 @@ footer .footer__container .social__icons {
   background: url(/images/mobile/image-gallery-cone.jpg) no-repeat center center;
   background-size: cover;
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .gallery-grid--image:nth-of-type(3) {
     background: url(/images/desktop/image-gallery-cone.jpg) no-repeat center center;
     background-size: cover;
@@ -615,7 +634,7 @@ footer .footer__container .social__icons {
   background: url(/images/mobile/image-gallery-sugar-cubes.jpg) no-repeat center center;
   background-size: cover;
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .gallery-grid--image:nth-of-type(4) {
     background: url(/images/desktop/image-gallery-sugarcubes.jpg) no-repeat center center;
     background-size: cover;
@@ -632,13 +651,18 @@ header {
   background-size: cover;
   background-position: center center;
 }
-@media only screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   header {
     height: 54rem;
     background-image: url(/images/mobile/image-header.jpg);
   }
 }
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  header {
+    background-image: url(/images/desktop/image-header.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
   header {
     background-image: url(/images/desktop/image-header.jpg);
   }
@@ -667,7 +691,7 @@ header .navbar {
 header .navbar .nav-menu {
   display: none;
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   header .navbar .nav-menu {
     display: block;
     display: flex;
@@ -681,7 +705,7 @@ header .navbar .hamburger-btn {
   display: block;
   cursor: pointer;
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   header .navbar .hamburger-btn {
     display: none;
   }
@@ -695,7 +719,7 @@ header .navbar .hamburger-btn {
   padding: 3rem 1rem 2rem 1rem;
   text-align: center;
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .testimonials {
     height: 76.7rem;
   }
@@ -703,7 +727,7 @@ header .navbar .hamburger-btn {
 .testimonials-title {
   margin-bottom: 4rem;
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .testimonials__container {
     display: flex;
     flex-direction: row;

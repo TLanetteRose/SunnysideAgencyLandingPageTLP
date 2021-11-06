@@ -6,8 +6,10 @@
     grid-template-areas: 
         "milk cutorange"
         "cone sugar";
-    
-    @media only screen and (min-width: 1024px) {
+    @media screen and (min-width: 520px) and (max-width: 768px) {
+        height: 50rem;
+    }
+    @media screen and (min-width: 1024px) {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
         grid-template-areas: 
@@ -24,7 +26,7 @@
         background: url(/images/mobile/image-gallery-milkbottles.jpg) no-repeat center center;
         background-size: cover;
 
-        @media only screen and (min-width: 1024px) {
+        @media screen and (min-width: 1024px) {
             background: url(/images/desktop/image-gallery-milkbottles.jpg) no-repeat center center;
             background-size: cover;
         }
@@ -35,7 +37,7 @@
         background: url(/images/mobile/image-gallery-orange.jpg) no-repeat center center;
         background-size: cover;
 
-        @media only screen and (min-width: 1024px) {
+        @media screen and (min-width: 1024px) {
             background: url(/images/desktop/image-gallery-orange.jpg) no-repeat center center;
             background-size: cover;
         }
@@ -46,7 +48,7 @@
         background: url(/images/mobile/image-gallery-cone.jpg) no-repeat center center;
         background-size: cover;
 
-        @media only screen and (min-width: 1024px) {
+        @media screen and (min-width: 1024px) {
             background: url(/images/desktop/image-gallery-cone.jpg) no-repeat center center;
             background-size: cover;
         }
@@ -57,7 +59,7 @@
         background: url(/images/mobile/image-gallery-sugar-cubes.jpg) no-repeat center center;
         background-size: cover;
 
-        @media only screen and (min-width: 1024px) {
+        @media screen and (min-width: 1024px) {
             background: url(/images/desktop/image-gallery-sugarcubes.jpg) no-repeat center center;
             background-size: cover;
         }
