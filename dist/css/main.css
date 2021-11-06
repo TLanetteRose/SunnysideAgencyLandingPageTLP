@@ -454,6 +454,7 @@ h6 {
 }
 .main .main-content--text {
   text-align: center;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -467,7 +468,6 @@ h6 {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .main .main-content--text {
     height: 50rem;
-    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -475,11 +475,10 @@ h6 {
     height: 60rem;
   }
 }
-.main .main-content--text .main-content--title {
-  padding: 2rem;
-}
-.main .main-content--text .main-content--description {
-  padding: 2rem;
+@media screen and (min-width: 768px) {
+  .main .main-content--text {
+    text-align: left;
+  }
 }
 .main .main-content .brand-image {
   grid-area: brand-image;
