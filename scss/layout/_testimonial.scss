@@ -3,7 +3,7 @@
     padding: 3rem 1rem 2rem 1rem;
     text-align: center;
 
-    @media only screen and (min-width: 1024px){
+    @include tablet-breakpoint {
         height: 76.7rem;
     }
 
@@ -12,7 +12,7 @@
     }
 
     &__container {
-        @media only screen and (min-width: 1024px) {
+        @media screen and (min-width: 1024px) {
             @include flex (row, center, center);
             height: 45.7rem;
         }

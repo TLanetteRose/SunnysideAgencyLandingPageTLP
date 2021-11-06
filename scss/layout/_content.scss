@@ -16,11 +16,11 @@
                 height: 32rem;
             }
 
-            @media only screen and (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+            @include tablet-breakpoint {
                 height: 50rem;
             }
 
-            @media only screen and (min-width: $bp-desktop) {
+            @include desktop-breakpoint {
                 height: 60rem;
             }
         }
@@ -32,11 +32,11 @@
                 height: 32rem;
             }
 
-            @media only screen and (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+            @include tablet-breakpoint {
                 height: 50rem;
             }
 
-            @media only screen and (min-width: $bp-desktop) {
+            @include desktop-breakpoint {
                 height: 60rem;
             }
 
@@ -46,11 +46,22 @@
         .brand-image {
             background: url(/images/mobile/image-transform.jpg) no-repeat center center;
             background-size: cover;
+
+            @media screen and (min-width: 1024px) {
+               background: url(/images/desktop/image-transform.jpg) no-repeat center center;
+               background-size: cover;
+            }
+
         }
 
         .audience-image {
             background: url(/images/mobile/image-stand-out.jpg) no-repeat center center;
             background-size: cover;
+
+            @media screen and (min-width: 1024px) {
+                background: url(/images/desktop/image-stand-out.jpg) no-repeat center center;
+                background-size: cover;
+            }
         }
 
 
@@ -65,7 +76,7 @@
             background-size: cover;
 
 
-            @media only screen and (min-width: 1024px) {
+            @media screen and (min-width: 1024px) {
                 background: url(/images/desktop/image-graphic-design.jpg) no-repeat center center;
                 background-size: cover;
             }
@@ -76,7 +87,7 @@
             background-size: cover;
 
 
-            @media only screen and (min-width: 1024px) {
+            @media screen and (min-width: 1024px) {
                 background: url(/images/desktop/image-photography.jpg) no-repeat center center;
                 background-size: cover;
             }
