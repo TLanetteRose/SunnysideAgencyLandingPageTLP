@@ -454,31 +454,42 @@ h6 {
 }
 .main .main-content--text {
   text-align: center;
-  margin: 2rem;
+  margin: 6.5rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .main .main-content--text {
-    height: 32rem;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .main .main-content--text {
-    height: 50rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .main .main-content--text {
-    height: 60rem;
-  }
-}
 @media screen and (min-width: 768px) {
   .main .main-content--text {
     text-align: left;
   }
+}
+.main .main-content--text-title, .main .main-content--text-description {
+  width: 100%;
+  padding-bottom: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .main .main-content--link {
+    width: 100%;
+    text-align: left;
+  }
+}
+.main .main-content--services {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main .main-content--services-text {
+  margin: 5rem 2rem;
+}
+.main .main-content--services-title {
+  padding-bottom: 4.5rem;
+}
+.main .main-content--services-description {
+  padding-bottom: 3rem;
 }
 .main .main-content .brand-image {
   grid-area: brand-image;
