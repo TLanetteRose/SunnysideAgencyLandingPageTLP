@@ -485,6 +485,12 @@ h6 {
 .main .main-content--services-text {
   margin: 5rem 2rem;
 }
+.main .main-content--services-title {
+  padding-bottom: 4.5rem;
+}
+.main .main-content--services-description {
+  padding-bottom: 3rem;
+}
 .main .main-content .brand-image {
   grid-area: brand-image;
   background: url(/images/mobile/image-transform.jpg) no-repeat center center;
