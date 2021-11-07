@@ -35,27 +35,34 @@
 
         &--text {
             text-align: center;
-            margin: 2rem;
+            margin: 6.5rem 2rem;
             @include flex (column, center, center);
 
-            @include mobile-breakpoint {
-                height: 32rem;
-            }
-
-            @include tablet-breakpoint {
-                height: 50rem;
-                
-            }
-
-            @include desktop-breakpoint {
-                height: 60rem;
-            }
-            
             @media screen and (min-width: $bp-tablet-start) {
                 text-align: left;
             }
 
+            &-title,
+            &-description {
+                width: 100%;
+                padding-bottom: 4rem;
+            }
+        }
 
+        &--link {
+            @media screen and (min-width: $bp-tablet-start) {
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        &--services {
+            text-align: center;
+            @include flex (column, flex-end, center);
+
+            &-text {
+                margin: 5rem 2rem;
+            }
         }
 
         .brand-image {
@@ -63,8 +70,7 @@
             background: url(/images/mobile/image-transform.jpg) no-repeat center center;
             background-size: cover;
 
-            @media screen and (min-width: $bp-tablet-start) {
-                
+            @media screen and (min-width: $bp-tablet-start) {    
             }
 
             @media screen and (min-width: 1024px) {

@@ -30,4 +30,8 @@ Resources:
 
 ### 11/06/2021
 
-Happy Saturday! I'm back to code. I decided not to use the other breakpoints. 
+Happy Saturday! I'm back to code. I decided not to use the other breakpoints.
+
+### 11/07/2021
+
+Happy Sunday. I'm glad that I did this project. It is teaching me to recognize that not all pages need a thousand different css rules to look beautiful. I'm also trying to organize how I add the styling to an element.
