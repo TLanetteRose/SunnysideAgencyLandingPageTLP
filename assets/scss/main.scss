@@ -1,6 +1,6 @@
 // Configuration and helpers
 @import 
-    'abstracts/mixins',
+    'abstracts/_mixins',
     'abstracts/variables';
 
 // Vendors
@@ -14,9 +14,7 @@
     'base/helpers', 
     'base/typography';
 
-// Pages
-@import 
-    'pages/home';
+// Layout
 
 @import 
     'layout/content',

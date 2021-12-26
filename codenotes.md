@@ -35,3 +35,9 @@ Happy Saturday! I'm back to code. I decided not to use the other breakpoints.
 ### 11/07/2021
 
 Happy Sunday. I'm glad that I did this project. It is teaching me to recognize that not all pages need a thousand different css rules to look beautiful. I'm also trying to organize how I add the styling to an element.
+
+### 12/26/2021
+
+- Start: 3.26pm EST
+
+Happy Sunday! I took time off to work on my portfolio. I'm going to start over because it's been so long. I want to time how long it will take to complete this site.
