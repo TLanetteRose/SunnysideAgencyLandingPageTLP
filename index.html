@@ -14,8 +14,10 @@
   <div class="wrapper">
     <header>
       <nav class="navbar">
-        <img class="logo" src="./images/logo.svg" alt="business logo">
-        <img class="hamburger-btn" src="./images/icon-hamburger.svg" alt="">
+        <div class="logo-container">
+          <img class="logo" src="./images/logo.svg" alt="business logo">
+        </div>
+        
         <ul class="nav-menu">
           <div class="triangle"></div>
           <li class="nav-item">
@@ -31,46 +33,43 @@
             <a href="#" class="nav-link contact-link">Contact</a>
           </li>
         </ul>
+
+        <button class="burger-menu" id="burger-menu">
+          <img class="menu-icon" src="./assets/images/icon-hamburger.svg" alt="">
+        </button>
       </nav>
-      <div class="header-tagline">
+
+      <section class="home">
         <h1 class="tagline">We are creatives</h1>
         <img class="arrow" src="./images/icon-arrow-down.svg" alt="">
-      </div>
+      </section>
     </header>
 
-    <main class="main">
-      <section class="main-content">
-        <div class="main-content--image brand-image"></div>
-        <div class="main-content--text brand-text">
-          <h2 class="main-content--text-title">Transform your brand</h2>
-          <p class="main-content--text-description">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-          <a href="#" class="main-content--link">Learn more</a>
-        </div>
-      </section>
+    <main>
+      <section class="features grid">
+        <div class="features__image transform"></div>
+        <article class="features__content-text">
+          <h2>Transform your brand</h2>
+          <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a href="#" class="link">Learn more</a>
+        </article>
 
-      <section class="main-content">
-        <div class="main-content--image audience-image"></div>
-        <div class="main-content--text audience-text">
-          <h2 class="main-content--text-title">Stand out to the right audience</h2>
-          <p class="main-content--text-description">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
-          <a href="#" class="main-content--link">Learn more</a>
-        </div>
-      </section>
+        <div class="features__image audience"></div>
+        <article class="features-content-text">
+          <h2>Stand out to the right audience</h2>
+          <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+          <a href="#" class="link">Learn more</a>
+        </article>
 
-      <section class="main-content">
-        <div class="main-content--services graphics">
-          <div class="main-content--services-text">
-            <h2 class="main-content--services-title">Graphic design</h2>
-            <p class="main-content--services-description">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
-          </div>
-        </div>  
+        <article class="features-services--design">
+          <h2>Graphic design</h2>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </article> 
 
-        <div class="main-content--services photography">
-          <div class="main-content--services-text">
-            <h2 class="main-content--services-title">Photography</h2>
-            <p class="main-content--services-description">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-          </div>
-        </div>
+        <article class="features-services--photography">
+          <h2>Photography</h2>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </article>
       </section>
     </main> <!-- .main -->
 
