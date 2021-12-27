@@ -1,32 +1,21 @@
-/*@mixin lg-screen-breakpoint {
-    @media screen and (min-width: $bp-lg-screen-start) and (max-width: $bp-lg-screen-end) {
-        @content;
-    }
-}
+/*
 
-@mixin xl-breakpoint {
+@mixin xl-desktop-breakpoint {
     @media screen and (min-width: $bp-xl-screen-start) and (max-width: $bp-xl-screen-end) {
         @content;
     }
 }
 
-@mixin xxl-breakpoint {
+@mixin xxl-desktop-breakpoint {
     @media screen and (min-width: $bp-xxl-screen-start) and (max-width: $bp-xxl-screen-end) {
         @content;
     }
 }*/
-/*$bp-mobile-start: 320px;
-$bp-mobile-end: 480px;
-$bp-tablet-start: 481px;
-$bp-tablet-end: 768px;
-$bp-notebook-start: 769px;
-$bp-notebook-end: 1024px;
-$bp-lg-screen-start: 1025px;
-$bp-lg-screen-end: 1200px;
-$bp-xl-screen-start: 1201px;
-$bp-xl-screen-end: 1440px;
-$bp-xxl-screen-start: 1441px;
-$bp-xxl-screen-end: 1920px;*/
+/*$bp-sm-mobile: 320px;
+$bp-lg-mobile: 767px;
+$bp-tablet-start: 768px;
+$bp-tablet-end: 1199px;
+$bp-desktop: 1200px;*/
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -439,29 +428,47 @@ h6 {
 }
 
 header {
-  width: 100%;
-  height: 80rem;
-  background-image: url(/assets/images/desktop/image-header.jpg);
-  background-position: center;
+  min-height: 80vh;
+  background-image: url(/assets/images/mobile/image-header.jpg);
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 1024px) {
   header {
     height: 53.8rem;
-    background-image: url(/assets/images/mobile/image-header.jpg);
+    background-image: url(/assets/images/desktop/image-header.jpg);
   }
 }
 header .navbar {
-  max-width: 80%;
-  width: 100%;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  height: 9rem;
+  padding: 1.5rem;
 }
-header .navbar .logo-container {
-  padding: 1rem;
+header .navbar .nav-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 481px) {
+  header .navbar .nav-menu {
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    flex-direction: row;
+    background-color: inherit;
+    width: auto;
+    padding: 0;
+    gap: 0;
+  }
+}
+@media screen and (min-width: 481px) {
+  header .navbar .burger-menu .menu-icon {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
