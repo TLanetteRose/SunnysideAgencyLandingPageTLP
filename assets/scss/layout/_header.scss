@@ -13,19 +13,19 @@ header {
     }
 
     .navbar {
+        max-width: 80%;
+        width: 100%;
         @include flex (row, space-between, center);
-
-
-        @include mobile-breakpoint {
-              
-        }
+        margin: 0 auto;
+        height: 9rem;
 
         .logo-container {
-            .logo {
-                text-align: left;
-            }
+            padding: 2rem;
         }
 
         
+
+           
+
     }
 }
