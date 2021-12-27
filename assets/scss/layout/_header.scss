@@ -8,7 +8,7 @@ header {
     color: $color-white;
 
     @media screen and (min-width: $bp-notebook-end) {
-        height: 53.8rem;
+        //height: 53.8rem;
         background-image: url(/assets/images/desktop/image-header.jpg);
          
     }
@@ -20,8 +20,17 @@ header {
 
         .nav-menu {
             @include flex (column, center, center);
+            width: 85%;
+            padding: 2rem;
+            opacity: 100%;
+            position: absolute;
+            top: 8rem;
+            left: calc((100% - 85%) / 2);
+            z-index: 1;
+            background-color: $color-white;
+            transition: 200ms ease-in-out;
 
-            @media screen and (min-width: $bp-tablet-start) {
+            @media screen and (min-width: $bp-tablet-end) {
                 position: inherit; 
                 top: inherit;
                 left: inherit;
@@ -32,11 +41,45 @@ header {
                 gap: 0;
             }
 
+            .nav-item {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            .triangle {
+                position: absolute;
+                clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+                background-color: $color-white;
+                width: 10%;
+                right: 0;
+                top: -8%;
+                z-index: -1;
+
+                @media screen and (min-width: $bp-tablet-end) {
+                    display: none;
+                }
+
+            }
+
+            a {
+                color: $color-dk-grayish-blue;
+                font-size: 1.4em;
+            }
+
+            .contact-link {
+                margin-top: .5rem;
+                font-family: $header-font-family;
+                background-color: $contact-button-background;
+                padding: .5rem .75rem;
+                border-radius: 3rem;
+            
+            }
+
         }
 
         .burger-menu {
             .menu-icon {
-                @media screen and (min-width: $bp-tablet-start) {
+                @media screen and (min-width: $bp-tablet-end) {
                     display: none;
                 }
             }

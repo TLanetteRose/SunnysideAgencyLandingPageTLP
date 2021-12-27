@@ -40,4 +40,10 @@ Happy Sunday. I'm glad that I did this project. It is teaching me to recognize t
 
 - Start: 3.26pm EST
 
+* End: 8:30pm EST
+
 Happy Sunday! I took time off to work on my portfolio. I'm going to start over because it's been so long. I want to time how long it will take to complete this site.
+
+### 12/27/2021
+
+Happy Monday! Learned something new today using calc(). I used it to set the measurement for left. I took 100%, subtracted 85%, then divided by 2 for each side. That places the element in the center. I was trying to use margin: auto, and padding, but had no luck. This worked well. Also learned that using gap with flexbox is still a work in progress. Used margin and padding. 

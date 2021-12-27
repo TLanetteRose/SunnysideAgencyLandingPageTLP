@@ -365,7 +365,6 @@ html {
 * {
   margin: 0;
   padding: 0;
-  outline: 1px solid black;
 }
 
 *,
@@ -437,7 +436,6 @@ header {
 }
 @media screen and (min-width: 1024px) {
   header {
-    height: 53.8rem;
     background-image: url(/assets/images/desktop/image-header.jpg);
   }
 }
@@ -454,8 +452,17 @@ header .navbar .nav-menu {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 85%;
+  padding: 2rem;
+  opacity: 100%;
+  position: absolute;
+  top: 8rem;
+  left: calc((100% - 85%) / 2);
+  z-index: 1;
+  background-color: white;
+  transition: 200ms ease-in-out;
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   header .navbar .nav-menu {
     position: inherit;
     top: inherit;
@@ -467,7 +474,37 @@ header .navbar .nav-menu {
     gap: 0;
   }
 }
-@media screen and (min-width: 481px) {
+header .navbar .nav-menu .nav-item {
+  margin: 1rem;
+  padding: 1rem;
+}
+header .navbar .nav-menu .triangle {
+  position: absolute;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background-color: white;
+  width: 10%;
+  right: 0;
+  top: -8%;
+  z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  header .navbar .nav-menu .triangle {
+    display: none;
+  }
+}
+header .navbar .nav-menu a {
+  color: #818498;
+  font-size: 1.4em;
+}
+header .navbar .nav-menu .contact-link {
+  margin-top: 0.5rem;
+  font-family: "Fraunces", serif;
+  background-color: #fad400;
+  padding: 0.5rem 0.75rem;
+  border-radius: 3rem;
+}
+@media screen and (min-width: 768px) {
   header .navbar .burger-menu .menu-icon {
     display: none;
   }
