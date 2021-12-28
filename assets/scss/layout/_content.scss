@@ -28,16 +28,40 @@
         }
     }
 
-    &__text {
+    article {
         width: 100%;
         min-height: 44rem;
-        @include flex (column, center, flex-start);
-        text-align: left;
+        @include flex (column, center, center);
+        text-align: center;
         padding: 2rem;
         margin: 1rem auto;
+        color: $color-dk-desat-blue; 
 
         @media screen and (min-width: $bp-tablet-end) {
             max-height: 60rem;
+            text-align: left;
+        } 
+
+        .features-text {
+            display: grid;
+            margin: 1rem;
+            padding: 2rem;
+            padding-bottom: 1rem;
+
+            p {
+                color: $color-dk-grayish-blue;
+            }
+        }
+        
+        .features-link {
+            color: $color-dk-desat-blue;
+            font-family: $header-font-family;
+            font-size: 1.8rem;
+            width: 100%;
+            margin: 3rem auto;
+            padding: 1rem 0;
+            
+            
             
         }
     }
@@ -47,11 +71,26 @@
         height: 60rem;
         position: relative;
 
+        .services-text {
+            position: absolute;
+            top: 70%;
+            text-align: center;
+            padding: 0 2rem;
+
+            h2 {
+                padding: 1rem 2rem;
+            }
+        }
         
+        .design-text {
+            color: $graphic-design-text;
+        }
+
+        .photo-text {
+            color: $photography-text;
+        }
         
     }
-
-    
 
     .transform {
         grid-area: area1;

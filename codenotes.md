@@ -46,4 +46,8 @@ Happy Sunday! I took time off to work on my portfolio. I'm going to start over b
 
 ### 12/27/2021
 
-Happy Monday! Learned something new today using calc(). I used it to set the measurement for left. I took 100%, subtracted 85%, then divided by 2 for each side. That places the element in the center. I was trying to use margin: auto, and padding, but had no luck. This worked well. Also learned that using gap with flexbox is still a work in progress. Used margin and padding. 
+Happy Monday! Learned something new today using calc(). I used it to set the measurement for left. I took 100%, subtracted 85%, then divided by 2 for each side. That places the element in the center. I was trying to use margin: auto, and padding, but had no luck. This worked well. Also learned that using gap with flexbox is still a work in progress. Used margin and padding.
+
+### 12/28/2021
+
+Hi! I'm back. I made good progress yesterday on the page. Learned something else new. I can use grid to help structure div elements without setting columns, rows, or areas.
