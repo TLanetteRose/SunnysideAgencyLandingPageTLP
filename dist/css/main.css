@@ -400,6 +400,11 @@ ul {
   visibility: hidden;
   opacity: 1;
 }
+@media screen and (min-width: 1024px) {
+  .hidden {
+    visibility: visible;
+  }
+}
 
 .wrapper {
   margin-left: auto;
@@ -421,6 +426,88 @@ h4,
 h5,
 h6 {
   font-family: "Fraunces", serif;
+}
+
+.features {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1fr, 6);
+  grid-template-areas: "area1" "area2" "area3" "area4" "area5" "area6";
+}
+@media screen and (min-width: 768px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "area2 area1" "area3 area4" "area5 area6";
+  }
+}
+.features__image {
+  width: 100%;
+  min-height: 32rem;
+}
+@media screen and (min-width: 768px) {
+  .features__image {
+    max-height: 60rem;
+  }
+}
+.features__text {
+  width: 100%;
+  min-height: 44rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding: 2rem;
+  margin: 1rem auto;
+}
+@media screen and (min-width: 768px) {
+  .features__text {
+    max-height: 60rem;
+  }
+}
+.features-services {
+  width: 100%;
+  height: 60rem;
+  position: relative;
+}
+.features .transform {
+  grid-area: area1;
+  background: url(/assets/images/mobile/image-transform.jpg) no-repeat center center;
+  background-size: cover;
+}
+.features .transform-text {
+  grid-area: area2;
+}
+.features .audience {
+  grid-area: area3;
+  background: url(/assets/images/mobile/image-stand-out.jpg) no-repeat center center;
+  background-size: cover;
+}
+.features .audience-text {
+  grid-area: area4;
+}
+.features .design-text {
+  grid-area: area5;
+  background: url(/assets/images/mobile/image-graphic-design.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .features .design-text {
+    background: url(/assets/images/desktop/image-graphic-design.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+.features .photography-text {
+  grid-area: area6;
+  background: url(/assets/images/mobile/image-photography.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .features .photography-text {
+    background: url(/assets/images/desktop/image-photography.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+  }
 }
 
 .attribution {
