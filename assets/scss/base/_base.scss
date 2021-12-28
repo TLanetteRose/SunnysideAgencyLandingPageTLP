@@ -40,4 +40,8 @@ ul {
 .hidden {
     visibility: hidden;
     opacity: 1;
+
+    @media screen and (min-width: $bp-notebook-end) {
+        visibility: visible;
+    }
 }
