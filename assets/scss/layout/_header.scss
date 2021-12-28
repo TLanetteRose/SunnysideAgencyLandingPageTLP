@@ -1,31 +1,164 @@
 header {
-    width: 100%;
-    height: 80rem;
-    background-image: url(/assets/images/desktop/image-header.jpg);
-    background-position: center;
+    //width: 100%;
+    min-height: 80vh;
+    background-image: url(/assets/images/mobile/image-header.jpg);
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    color: $color-white;
 
-    @include mobile-breakpoint {
-        height: 53.8rem;
-        background-image: url(/assets/images/mobile/image-header.jpg);
+    @media screen and (min-width: $bp-notebook-end) {
+        //height: 53.8rem;
+        min-height: 100vh;
+        position: relative;
+        background-image: url(/assets/images/desktop/image-header.jpg);
          
     }
 
     .navbar {
-        max-width: 80%;
-        width: 100%;
+        position: relative;
         @include flex (row, space-between, center);
-        margin: 0 auto;
-        height: 9rem;
+        padding: 1.5rem;
 
-        .logo-container {
-            padding: 1rem;
+        @media screen and (min-width: $bp-notebook-start) {
+            padding: 2rem;
         }
 
-        
+        .logo-container {
+            padding: 2rem;
+            .logo {
+               width: 12.3rem;
+               
+               @media screen and (min-width: $bp-notebook-start) {
+                   width: 17rem;
+                   padding-top: .5rem;
+               }
+            }
+        }
 
-           
+        .nav-menu {
+            @include flex (column, center, center);
+            width: 85%;
+            padding: 2rem;
+            opacity: 100%;
+            position: absolute;
+            top: 8rem;
+            left: calc((100% - 85%) / 2);
+            z-index: 1;
+            background-color: $color-white;
+            transition: 200ms ease-in-out;
 
+            @media screen and (min-width: $bp-notebook-start) {
+                position: inherit; 
+                top: inherit;
+                left: inherit;
+                flex-direction: row;
+                background-color: inherit;
+                width: auto;
+                padding: 0; 
+            }
+
+            .nav-item {
+                margin: 1rem;
+                padding: 1rem;
+
+                @media screen and (min-width: $bp-notebook-start) {
+                    padding: .5rem .75rem;
+                    
+                }
+
+            }
+
+            .triangle {
+                position: absolute;
+                clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+                background-color: $color-white;
+                width: 10%;
+                right: 0;
+                top: -8%;
+                z-index: -1;
+
+                @media screen and (min-width: $bp-notebook-start) {
+                    display: none;
+                }
+
+            }
+
+            a {
+                color: $color-dk-grayish-blue;
+                font-size: 1.4em;
+
+
+                @media screen and (min-width: $bp-notebook-start) {
+                    font-size: 1.2em;
+                    color: $color-white;
+                    padding: .75rem 1rem;
+                    border-radius: 3rem;
+
+                    &:hover, 
+                    &:focus {
+                        background-color: $color-white;
+                        color: $color-dk-desat-blue;
+                    }
+                }
+
+            }
+
+            .contact-link {
+                margin-top: .5rem;
+                font-family: $header-font-family;
+                background-color: $contact-button-background;
+                padding: .75rem 1rem;
+                border-radius: 3rem;
+                cursor: pointer;
+                text-transform: uppercase;
+
+                @media screen and (min-width: $bp-notebook-start) {
+                    margin-left: 2rem;
+                    margin: 0;
+                    background-color: unset;
+                }
+            
+            }
+
+        }
+
+        .burger-menu {
+            cursor: pointer;
+
+            @media screen and (min-width: $bp-notebook-start) {
+                display: none;
+            }
+            
+        }
+    }
+
+    .home {
+        @include flex (column, center, center);
+
+        @media screen and (min-width: $bp-notebook-start) {
+            position: absolute;
+            top: 30%;
+            width: 100%;
+
+        }
+
+        .tagline {
+            //font-size: 3.6em;
+            font-family: $header-font-family;
+            text-align: center;
+            margin: 3rem 1rem;
+            text-transform: uppercase;
+
+            @media screen and (min-width: $bp-notebook-start) {
+                font-size: 6.4rem;
+            }
+        }
+
+        .arrow {
+            margin-top: 2rem;
+            width: 5rem;
+        }
     }
 }
+
