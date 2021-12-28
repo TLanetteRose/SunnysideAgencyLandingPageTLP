@@ -396,6 +396,11 @@ ul {
   width: 100%;
 }
 
+.hidden {
+  visibility: hidden;
+  opacity: 1;
+}
+
 .wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -584,9 +589,4 @@ header .home .tagline {
 header .home .arrow {
   margin-top: 2rem;
   width: 5rem;
-}
-
-.hidden {
-  visibility: visible;
-  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
