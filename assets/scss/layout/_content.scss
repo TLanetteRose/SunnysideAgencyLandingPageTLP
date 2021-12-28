@@ -6,30 +6,90 @@
         "area2"
         "area3"
         "area4"
-        "area4"
-        "area5";
+        "area5"
+        "area6";
+
+    @media screen and (min-width: $bp-tablet-end) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+            "area2 area1" 
+            "area3 area4"  
+            "area5 area6";
+    }
     
     &__image {
         width: 100%;
         min-height: 32rem;
 
-        @media screen and (min-width: $bp-notebook-end) {
+        @media screen and (min-width: $bp-tablet-end) {
             max-height: 60rem;
+            
         }
     }
 
     &__text {
         width: 100%;
         min-height: 44rem;
+        @include flex (column, center, flex-start);
+        text-align: left;
+        padding: 2rem;
+        margin: 1rem auto;
 
-        @media screen and (min-width: $bp-notebook-end) {
+        @media screen and (min-width: $bp-tablet-end) {
             max-height: 60rem;
+            
         }
     }
 
     &-services {
         width: 100%; 
         height: 60rem;
+        position: relative;
     }
 
+    .transform {
+        grid-area: area1;
+        background: url(/assets/images/mobile/image-transform.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .transform-text {
+        grid-area: area2;
+    }
+
+    .audience {
+        grid-area: area3;
+        background: url(/assets/images/mobile/image-stand-out.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .audience-text {
+        grid-area: area4;
+    }
+
+    .design-text {
+        grid-area: area5;
+        background: url(/assets/images/mobile/image-graphic-design.jpg) no-repeat center center;
+        background-size: cover;
+
+        @media screen and (min-width: $bp-tablet-end) {
+            background: url(/assets/images/desktop/image-graphic-design.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        
+    }
+
+    .photography-text {
+        grid-area: area6;
+        background: url(/assets/images/mobile/image-photography.jpg) no-repeat center center;
+        background-size: cover;
+
+        @media screen and (min-width: $bp-tablet-end) {
+            background: url(/assets/images/desktop/image-photography.jpg) no-repeat center center;
+            background-size: cover;
+            width: 100%;
+        }
+
+    }
 }
