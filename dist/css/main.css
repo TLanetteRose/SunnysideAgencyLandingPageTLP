@@ -486,24 +486,24 @@ h6 {
 .features .audience-text {
   grid-area: area4;
 }
-.features .design-text {
+.features .design {
   grid-area: area5;
   background: url(/assets/images/mobile/image-graphic-design.jpg) no-repeat center center;
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
-  .features .design-text {
+  .features .design {
     background: url(/assets/images/desktop/image-graphic-design.jpg) no-repeat center center;
     background-size: cover;
   }
 }
-.features .photography-text {
+.features .photography {
   grid-area: area6;
   background: url(/assets/images/mobile/image-photography.jpg) no-repeat center center;
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
-  .features .photography-text {
+  .features .photography {
     background: url(/assets/images/desktop/image-photography.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
