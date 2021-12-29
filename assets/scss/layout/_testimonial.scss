@@ -1,0 +1,43 @@
+.testimonials {
+    text-align: center;
+    padding: 3rem 1rem 2rem 1rem;
+    
+    &-title {
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+        color: $color-dk-grayish-blue;
+    }
+    &__container {
+        @media screen and (min-width: $bp-tablet-end){
+            @include flex (row, space-evenly, center);
+            width: 100%;
+        }
+        
+        .client {
+            @include flex (column, space-around, center);
+            padding: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+
+            
+
+            &-image {
+                border-radius: 50%;
+                width: 7.5rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+                color: $color-very-dk-grayish-blue;
+                max-width: 40ch;
+                padding: 2rem;
+            }
+
+            .position {
+            padding: 1rem;
+            font-size: 1.2rem;
+            }
+        }
+    }
+    
+}

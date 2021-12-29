@@ -449,26 +449,72 @@ h6 {
     max-height: 60rem;
   }
 }
-.features__text {
+.features article {
   width: 100%;
   min-height: 44rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+  text-align: center;
   padding: 2rem;
-  margin: 1rem auto;
+  color: #23303e;
 }
 @media screen and (min-width: 768px) {
-  .features__text {
+  .features article {
     max-height: 60rem;
+    text-align: left;
   }
+}
+.features article .features-text {
+  display: grid;
+  margin: 1rem;
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+.features article .features-text p {
+  color: #818498;
+}
+.features article .features-link {
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-size: 1.8rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 0.5rem;
+  margin: 3rem auto;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  text-transform: uppercase;
+}
+.features article .transform-link:hover {
+  box-shadow: 0 16px 0 0 #fad400;
+  margin-bottom: 3rem;
+}
+.features article .audience-link:hover {
+  box-shadow: 0 16px 0 0 #fe7867;
+  margin-bottom: 3rem;
 }
 .features-services {
   width: 100%;
   height: 60rem;
   position: relative;
+}
+.features-services .services-text {
+  position: absolute;
+  top: 70%;
+  text-align: center;
+  padding: 0 2rem;
+}
+.features-services .services-text h2 {
+  padding: 1rem 2rem;
+}
+.features-services .design-text {
+  color: #25564b;
+}
+.features-services .photo-text {
+  color: #19536b;
 }
 .features .transform {
   grid-area: area1;
@@ -676,4 +722,46 @@ header .home .tagline {
 header .home .arrow {
   margin-top: 2rem;
   width: 5rem;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+}
+.testimonials-title {
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  color: #818498;
+}
+@media screen and (min-width: 768px) {
+  .testimonials__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+}
+.testimonials__container .client {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.testimonials__container .client-image {
+  border-radius: 50%;
+  width: 7.5rem;
+}
+.testimonials__container .client p {
+  font-size: 1.4rem;
+  color: #5a636c;
+  max-width: 40ch;
+  padding: 2rem;
+}
+.testimonials__container .client .position {
+  padding: 1rem;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=main.css.map */
