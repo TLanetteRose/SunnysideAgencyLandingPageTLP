@@ -16,13 +16,31 @@ footer {
        } 
           
        nav {
+           margin-bottom: 2rem;
            .footer__nav {
-               width: 100%;
+               //width: 100%;
                @include flex (row, space-between, center);
 
                &-item {
                    padding: 2rem;
+
+                    @media screen and (min-width: $bp-tablet-end) {
+                        padding: 3rem;
+                    }
+
+                   .footer__nav-link {
+                       color: $footer-link;
+                       font-weight: $font-weight-bold;
+                   }
                }
+           }
+       }
+
+       .social__icons {
+           @include flex (row, space-evenly, center);
+
+           &-link {
+               padding: 2rem;
            }
        }
 
