@@ -1,19 +1,30 @@
-footer {
-   height: 35rem;
+footer { 
+   height: 40rem;
    padding: 2rem;
+   background-color: $footer-color;
    text-align: center;
 
    .footer__container {
+       padding: 1rem;
        height: 35rem;
        @include flex (column, space-between, center);
 
        .footer-logo {
           width: 125%;
           margin: auto; 
-          padding: 2rem;
+          padding: 3rem;
        } 
           
-       
+       nav {
+           .footer__nav {
+               width: 100%;
+               @include flex (row, space-between, center);
+
+               &-item {
+                   padding: 2rem;
+               }
+           }
+       }
 
    }
 
