@@ -1,15 +1,65 @@
-footer {
-    background-color: $footer-color;
+footer { 
+   height: 40rem;
+   padding: 2rem;
+   background-color: $footer-color;
+   text-align: center;
+
+   .footer__container {
+       padding: 1rem;
+       height: 35rem;
+       @include flex (column, space-between, center);
+
+       .footer-logo {
+          width: 125%;
+          margin: auto; 
+          padding: 3rem;
+       } 
+          
+       nav {
+           margin-bottom: 2rem;
+           .footer__nav {
+               //width: 100%;
+               @include flex (row, space-between, center);
+
+               &-item {
+                   padding: 2rem;
+
+                    @media screen and (min-width: $bp-tablet-end) {
+                        padding: 3rem;
+                    }
+
+                   .footer__nav-link {
+                       color: $footer-link;
+                       font-weight: $font-weight-bold;
+                   }
+               }
+           }
+       }
+
+       .social__icons {
+           @include flex (row, space-evenly, center);
+
+           &-link {
+               padding: 2rem;
+           }
+       }
+
+   }
+
+
+
+
+   .attribution {
+       font-size: 11px;
+       text-align: center;
+   }
+
+   .attribution a {
+       color: hsl(228, 45%, 44%);
+   }
+   
 }
 
 
 
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
