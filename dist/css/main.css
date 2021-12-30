@@ -573,7 +573,6 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "area1 area2" "area3 area4";
-  max-height: 44.8rem;
 }
 @media screen and (min-width: 768px) {
   .gallery {
@@ -581,7 +580,13 @@ footer {
   }
 }
 .gallery-image {
+  width: 100%;
   min-height: 18.8rem;
+}
+@media screen and (min-width: 768px) {
+  .gallery-image {
+    height: 44.7rem;
+  }
 }
 .gallery .mk-image {
   background: url(/assets/images/mobile/image-gallery-milkbottles.jpg) no-repeat center center;
@@ -771,38 +776,58 @@ header .home .arrow {
 
 .testimonials {
   text-align: center;
-  padding: 3rem 1rem 2rem 1rem;
+  padding: 3rem 1rem 3rem 1rem;
 }
 .testimonials-title {
-  margin-bottom: 4rem;
+  margin: 4rem 0;
+  padding: 3rem;
   text-transform: uppercase;
   color: #818498;
 }
+.testimonials__container {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 2rem 1rem;
+  margin-bottom: 3rem;
+}
 @media screen and (min-width: 768px) {
   .testimonials__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     width: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .testimonials__container {
+    padding: 3rem 9rem;
   }
 }
 .testimonials__container .client {
   display: grid;
-  margin: 1rem;
+  margin: 3rem 1rem;
   padding: 2rem;
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 1440px) {
+  .testimonials__container .client {
+    padding: 1rem;
+  }
 }
 .testimonials__container .client-image {
   margin: auto;
   border-radius: 50%;
   width: 7.5rem;
 }
+@media screen and (min-width: 1440px) {
+  .testimonials__container .client-image {
+    margin: 2rem auto;
+  }
+}
 .testimonials__container .client p {
   font-size: 1.4rem;
   color: #5a636c;
   max-width: 40ch;
-  margin: auto;
+  margin: 0.5rem auto;
   padding: 2rem;
 }
 .testimonials__container .client h2 {
