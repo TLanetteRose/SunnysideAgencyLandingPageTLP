@@ -51,3 +51,7 @@ Happy Monday! Learned something new today using calc(). I used it to set the mea
 ### 12/28/2021
 
 Hi! I'm back. I made good progress yesterday on the page. Learned something else new. I can use grid to help structure div elements without setting columns, rows, or areas.
+
+### 12/30/2021
+
+Morning! My goal is to complete the this project today. I have the gallery and footer to do. I'm adding the project to Vercel now. 
