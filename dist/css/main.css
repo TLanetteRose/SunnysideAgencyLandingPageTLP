@@ -557,15 +557,27 @@ h6 {
 }
 
 footer {
-  background-color: #85eace;
+  height: 35rem;
+  padding: 2rem;
+  text-align: center;
 }
-
-.attribution {
+footer .footer__container {
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer__container .footer-logo {
+  width: 125%;
+  margin: auto;
+  padding: 2rem;
+}
+footer .attribution {
   font-size: 11px;
   text-align: center;
 }
-
-.attribution a {
+footer .attribution a {
   color: #3e52a3;
 }
 
