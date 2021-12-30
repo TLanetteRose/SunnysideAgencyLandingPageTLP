@@ -743,15 +743,13 @@ header .home .arrow {
   }
 }
 .testimonials__container .client {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  margin: 1rem;
   padding: 2rem;
-  margin-bottom: 3rem;
-  text-align: center;
+  padding-bottom: 1rem;
 }
 .testimonials__container .client-image {
+  margin: auto;
   border-radius: 50%;
   width: 7.5rem;
 }
@@ -759,7 +757,11 @@ header .home .arrow {
   font-size: 1.4rem;
   color: #5a636c;
   max-width: 40ch;
+  margin: auto;
   padding: 2rem;
+}
+.testimonials__container .client h2 {
+  font-size: 1.45em;
 }
 .testimonials__container .client .position {
   padding: 1rem;
