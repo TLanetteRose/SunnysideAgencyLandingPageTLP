@@ -58,4 +58,4 @@ Morning! My goal is to complete the this project today. I have the gallery and f
 
 ### 12/31/2021
 
-It's New Year's Eve. I want to finish this project before tomorrow. 
+It's New Year's Eve. I want to finish this project before tomorrow. So far I have adjusted the sizing in the header home element. I was having a difficult time placing the arrow. Then I realized I should use flex to help with placement and place the whole home element.
