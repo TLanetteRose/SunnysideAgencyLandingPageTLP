@@ -54,4 +54,4 @@ Hi! I'm back. I made good progress yesterday on the page. Learned something else
 
 ### 12/30/2021
 
-Morning! My goal is to complete the this project today. I have the gallery and footer to do. I'm adding the project to Vercel now. 
+Morning! My goal is to complete the this project today. I have the gallery and footer to do. I'm adding the project to Vercel now. Tomorrow- review the colors and focus/hover effects.
