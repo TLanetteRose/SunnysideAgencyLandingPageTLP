@@ -144,15 +144,22 @@ header {
         
 
         @media screen and (min-width: $bp-notebook-start) {
-            position: absolute;
+            //position: absolute;
             top: 30%;
             width: 100%;
 
         }
-        @media screen and (max-width: 374px) {
+
+        @media screen and (min-width: 321px) and (max-width: 375px) {
+            justify-content: space-between;
+            top: 15rem;
+        }
+        @media screen and (max-width: 320px) {
             justify-content: center;
             top: 10rem;
         }
+
+
         
 
         .tagline {
@@ -166,7 +173,7 @@ header {
                 font-size: 6.4rem;
             }
 
-            @media screen and (max-width: 374px) {
+            @media screen and (max-width: 375px) {
                 font-size: 1.4em;
             }
 
@@ -175,7 +182,7 @@ header {
         .arrow {
               
             @media screen and (max-width: 374px) {
-                width: 2rem;
+                width: 2.5rem;
             }
 
             

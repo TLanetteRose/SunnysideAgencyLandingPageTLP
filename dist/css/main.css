@@ -836,12 +836,17 @@ header .home {
 }
 @media screen and (min-width: 769px) {
   header .home {
-    position: absolute;
     top: 30%;
     width: 100%;
   }
 }
-@media screen and (max-width: 374px) {
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  header .home {
+    justify-content: space-between;
+    top: 15rem;
+  }
+}
+@media screen and (max-width: 320px) {
   header .home {
     justify-content: center;
     top: 10rem;
@@ -858,14 +863,14 @@ header .home .tagline {
     font-size: 6.4rem;
   }
 }
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 375px) {
   header .home .tagline {
     font-size: 1.4em;
   }
 }
 @media screen and (max-width: 374px) {
   header .home .arrow {
-    width: 2rem;
+    width: 2.5rem;
   }
 }
 
