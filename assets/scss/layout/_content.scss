@@ -51,11 +51,12 @@
             padding-bottom: 1rem;
 
             @media screen and (min-width: $bp-tablet-end) {
-                max-width: 70ch;
+                max-width: 45rem;
                 padding-bottom: 0;
             }
 
             h2 {
+                padding: 2rem;
                 @media screen and (min-width: $bp-tablet-end){
                     font-size: 2.5em;
                 }
@@ -63,6 +64,7 @@
 
             p {
                 color: $color-dk-grayish-blue;
+                line-height: 1.4em;
                 
             }
         }
@@ -108,10 +110,17 @@
             position: absolute;
             top: 70%;
             text-align: center;
+            margin: auto;
             padding: 0 2rem;
+            max-width: 34rem;
 
             h2 {
                 padding: 1rem 2rem;
+                font-weight: $font-weight-bold;
+            }
+
+            p {
+                line-height: 1.2em;
             }
         }
         
