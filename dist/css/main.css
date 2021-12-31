@@ -854,7 +854,7 @@ header .home {
     top: 20rem;
   }
 }
-@media screen and (min-width: 321px) and (max-width: 375px) {
+@media screen and (min-width: 321px) and (max-width: 479px) {
   header .home {
     justify-content: space-between;
     top: 15rem;
