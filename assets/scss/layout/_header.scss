@@ -1,5 +1,6 @@
 header {
     //width: 100%;
+    @include flex (column, space-between, center);
     min-height: 80vh;
     background-image: url(/assets/images/mobile/image-header.jpg);
     background-position: center center;
@@ -16,6 +17,7 @@ header {
     }
 
     .navbar {
+        width: 100%;
         position: relative;
         @include flex (row, space-between, center);
         padding: 1.5rem;
@@ -135,7 +137,11 @@ header {
 
 
     .home {
-        @include flex (column, center, center);
+        @include flex (column, space-between, center);
+        position: absolute;
+        height: 20rem;
+        top: 2rem;
+        
 
         @media screen and (min-width: $bp-notebook-start) {
             position: absolute;
@@ -143,6 +149,11 @@ header {
             width: 100%;
 
         }
+        @media screen and (max-width: 374px) {
+            justify-content: center;
+            top: 10rem;
+        }
+        
 
         .tagline {
             //font-size: 3.6em;
@@ -154,11 +165,20 @@ header {
             @media screen and (min-width: $bp-notebook-start) {
                 font-size: 6.4rem;
             }
+
+            @media screen and (max-width: 374px) {
+                font-size: 1.4em;
+            }
+
         }
 
         .arrow {
-            margin-top: 2rem;
-            width: 5rem;
+              
+            @media screen and (max-width: 374px) {
+                width: 2rem;
+            }
+
+            
         }
     }
 }
