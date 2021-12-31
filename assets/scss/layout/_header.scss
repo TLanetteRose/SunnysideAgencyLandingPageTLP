@@ -1,5 +1,6 @@
 header {
     //width: 100%;
+    @include flex (column, space-between, center);
     min-height: 80vh;
     background-image: url(/assets/images/mobile/image-header.jpg);
     background-position: center center;
@@ -16,6 +17,7 @@ header {
     }
 
     .navbar {
+        width: 100%;
         position: relative;
         @include flex (row, space-between, center);
         padding: 1.5rem;
@@ -135,14 +137,50 @@ header {
 
 
     .home {
-        @include flex (column, center, center);
+        @include flex (column, space-between, center);
+        position: absolute;
+        height: 20rem;
+        top: 2rem;
 
-        @media screen and (min-width: $bp-notebook-start) {
-            position: absolute;
-            top: 30%;
-            width: 100%;
-
+        @include xxl-desktop-breakpoint {
+            height: 40rem;
+            top: 30rem;
         }
+        @include xl-desktop-breakpoint {
+            justify-content: space-evenly;
+            height: 50rem;
+            top: 12rem;
+        }
+        
+        @media screen and (min-width: $bp-notebook-end) and (max-width: $bp-lg-screen-end) {
+            justify-content: space-between;
+            height: 50rem;
+            top: 35rem;
+        }
+
+        @media screen and (min-width: $bp-tablet-end) and (max-width: 1023px) {
+            //position: absolute;
+            height: 35rem;
+            top: 25rem;
+            width: 100%;
+        }
+
+        
+        @media screen and (min-width: $bp-mobile-end) and (max-width: 767px) {
+            justify-content: space-between;
+            height: 25rem;
+            top: 20rem;
+        }
+
+        @media screen and (min-width: 321px) and (max-width: 375px) {
+            justify-content: space-between;
+            top: 15rem;
+        }
+        @media screen and (max-width: 320px) {
+            justify-content: center;
+            top: 8rem;
+        }
+
 
         .tagline {
             //font-size: 3.6em;
@@ -151,14 +189,37 @@ header {
             margin: 3rem 1rem;
             text-transform: uppercase;
 
-            @media screen and (min-width: $bp-notebook-start) {
-                font-size: 6.4rem;
+            @media screen and (min-width: $bp-notebook-start) and (max-width: $bp-xxl-screen-end){
+                font-size: 4em;
             }
+
+            @media screen and (min-width: $bp-tablet-end) and (max-width: 1023px) {
+                //position: absolute;
+                font-size: 3em;
+            }
+
+            @media screen and (min-width: $bp-mobile-end) and (max-width: 767px){
+                font-size: 2em;
+            }
+
+            @media screen and (max-width: 320px) {
+                font-size: 1.8em;
+            }
+
         }
 
         .arrow {
-            margin-top: 2rem;
-            width: 5rem;
+             width: 5rem; 
+
+             @media screen and (min-width: $bp-mobile-end) and (max-width: 767px){
+                 width: 4rem;
+             }
+
+            @media screen and (max-width: 375px) {
+                width: 2.5rem;
+            }
+
+            
         }
     }
 }
