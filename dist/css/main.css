@@ -1,16 +1,3 @@
-/*
-
-@mixin xl-desktop-breakpoint {
-    @media screen and (min-width: $bp-xl-screen-start) and (max-width: $bp-xl-screen-end) {
-        @content;
-    }
-}
-
-@mixin xxl-desktop-breakpoint {
-    @media screen and (min-width: $bp-xxl-screen-start) and (max-width: $bp-xxl-screen-end) {
-        @content;
-    }
-}*/
 /*$bp-sm-mobile: 320px;
 $bp-lg-mobile: 767px;
 $bp-tablet-start: 768px;
@@ -834,10 +821,38 @@ header .home {
   height: 20rem;
   top: 2rem;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
   header .home {
-    top: 30%;
+    height: 40rem;
+    top: 30rem;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+  header .home {
+    justify-content: space-evenly;
+    height: 50rem;
+    top: 12rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  header .home {
+    justify-content: space-between;
+    height: 50rem;
+    top: 35rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header .home {
+    height: 35rem;
+    top: 25rem;
     width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  header .home {
+    justify-content: space-between;
+    height: 25rem;
+    top: 20rem;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 375px) {
@@ -849,7 +864,7 @@ header .home {
 @media screen and (max-width: 320px) {
   header .home {
     justify-content: center;
-    top: 10rem;
+    top: 8rem;
   }
 }
 header .home .tagline {
@@ -858,17 +873,35 @@ header .home .tagline {
   margin: 3rem 1rem;
   text-transform: uppercase;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1920px) {
   header .home .tagline {
-    font-size: 6.4rem;
+    font-size: 4em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header .home .tagline {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  header .home .tagline {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .home .tagline {
+    font-size: 1.8em;
+  }
+}
+header .home .arrow {
+  width: 5rem;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  header .home .arrow {
+    width: 4rem;
   }
 }
 @media screen and (max-width: 375px) {
-  header .home .tagline {
-    font-size: 1.4em;
-  }
-}
-@media screen and (max-width: 374px) {
   header .home .arrow {
     width: 2.5rem;
   }
