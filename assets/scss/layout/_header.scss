@@ -153,7 +153,7 @@ header {
         }
         
         @media screen and (min-width: $bp-notebook-end) and (max-width: $bp-lg-screen-end) {
-            justify-content: space-between;
+            justify-content: space-evenly;
             height: 50rem;
             top: 35rem;
         }

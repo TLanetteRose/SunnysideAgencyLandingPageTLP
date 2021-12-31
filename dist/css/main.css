@@ -352,7 +352,6 @@ html {
 * {
   margin: 0;
   padding: 0;
-  outline: 1px solid black;
 }
 
 *,
@@ -836,7 +835,7 @@ header .home {
 }
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
   header .home {
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 50rem;
     top: 35rem;
   }
