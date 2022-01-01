@@ -613,6 +613,9 @@ footer .footer__container nav .footer__nav-item .footer__nav-link {
   color: #25564b;
   font-weight: 700;
 }
+footer .footer__container nav .footer__nav-item .footer__nav-link:hover {
+  color: white;
+}
 footer .footer__container .social__icons {
   display: flex;
   flex-direction: row;
@@ -621,6 +624,9 @@ footer .footer__container .social__icons {
 }
 footer .footer__container .social__icons-link {
   padding: 2rem;
+}
+footer .footer__container .social__icons img:hover {
+  filter: brightness(0) invert(1);
 }
 footer .attribution {
   font-size: 11px;

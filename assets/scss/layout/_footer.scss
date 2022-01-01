@@ -32,6 +32,10 @@ footer {
                        color: $footer-link;
                        font-weight: $font-weight-bold;
                    }
+
+                   .footer__nav-link:hover {
+                       color: $color-white;
+                   }
                }
            }
        }
@@ -41,6 +45,10 @@ footer {
 
            &-link {
                padding: 2rem;
+           }
+
+           img:hover {
+               filter: brightness(0) invert(1);
            }
        }
 
