@@ -83,22 +83,22 @@
             @media screen and (min-width: $bp-tablet-end) {
                 margin-left: 2rem;
                 box-shadow: none;
-                &:hover,
-                &:focus {
-                    box-shadow: 0 16px 0 0 $transform-active-underline;
-                }
             }
         }
 
-        .transform-link:hover {
+        .transform-link:hover,
+        .transform-link:focus {
             box-shadow: 0 16px 0 0 $transform-active-underline;
             margin-bottom: 3rem;  
         }
 
-        .audience-link:hover {
+        .audience-link:hover,
+        .audience-link:focus {
             box-shadow: 0 16px 0 0 $audience-active-underline;
             margin-bottom: 3rem;
         }
+
+
     }
 
     &-services {
