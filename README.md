@@ -79,58 +79,15 @@ I used the [Responsively](https://opencollective.com/responsively) app while cod
 
 ### What I learned
 
-I learned that sometimes less is more and that I needed to trust CSS Grid and Flexbox for positioning my layout.
+I learned that sometimes less is more and that I needed to trust CSS Grid and Flexbox for positioning my layout. I found an example where 
 
 To see how you can add code snippets, see below:
 
 ```css
-.client {
-	display: grid;
-	margin: 3rem 1rem;
-	padding-bottom: 1rem;
-
-	@media screen and (min-width: $bp-xl-screen-end) {
-		padding: 1rem;
-	}
-
-	&-image {
-		margin: 2rem auto;
-		border-radius: 50%;
-		width: 7.5rem;
-		@media screen and (min-width: $bp-xl-screen-end) {
-			margin: 3rem auto;
-		}
-	}
-
-	p {
-		font-size: 1.5rem;
-		line-height: 1.5em;
-		color: $color-very-dk-grayish-blue;
-		max-width: 35rem;
-		margin: auto;
-		//padding: 2rem;
-	}
-
-	h2 {
-		font-size: 1.45em;
-		margin-top: 6rem;
-	}
-
-	.position {
-		margin-top: 1rem;
-		padding: 0.5rem;
-		font-size: 1.2rem;
-	}
+img:hover {
+	filter: brightness(0) invert(1);
 }
 ```
-
-```js
-const proudOfThisFunc = () => {
-	console.log('🎉');
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 ### Continued development
 
