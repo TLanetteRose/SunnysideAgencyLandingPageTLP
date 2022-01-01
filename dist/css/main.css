@@ -495,15 +495,14 @@ h6 {
     margin-left: 2rem;
     box-shadow: none;
   }
-  .features article .features-link:hover, .features article .features-link:focus {
-    box-shadow: 0 16px 0 0 #fad400;
-  }
 }
-.features article .transform-link:hover {
+.features article .transform-link:hover,
+.features article .transform-link:focus {
   box-shadow: 0 16px 0 0 #fad400;
   margin-bottom: 3rem;
 }
-.features article .audience-link:hover {
+.features article .audience-link:hover,
+.features article .audience-link:focus {
   box-shadow: 0 16px 0 0 #fe7867;
   margin-bottom: 3rem;
 }
