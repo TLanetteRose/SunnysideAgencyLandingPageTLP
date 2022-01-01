@@ -27,15 +27,39 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Desktop Header & Page
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Sunnyside Agency Landing Page Header](assets/images/Screenshots/SunnysideDesktopHeader.jpg)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+---
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![Sunnyside Agency Landing Page Desktop](assets/images/Screenshots/SunnysideDesktop-side.jpg)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+---
+
+#### Tablet: iPad Pro Header and Page
+
+![Sunnyside Agency Landing Page Tablet](assets/images/Screenshots/SunnysideIpadPro.jpg)
+
+---
+
+#### Mobile: Nokia Header and Page
+
+![Sunnyside Agency Landing Page Header](assets/images/Screenshots/SunnysideHeaderNokia1-side.jpg)
+
+---
+
+![Sunnyside Agency Landing Page Mobile](assets/images/Screenshots/SunnysideNokia1-side.jpg)
+
+---
+
+I have included five screen shots of three devices:
+
+- Nokia N9 (480x854)
+- iPad Pro (1024x1366)
+- MacBook Air (1440x900)
+
+I used the [Responsively](https://opencollective.com/responsively) app while coding. They have a great screen-shot function. I also used [Photoscape app](http://www.photoscape.org/ps/main/index.php) to edit and combine the screen shots.
 
 ### Links
 
