@@ -79,9 +79,7 @@ I used the [Responsively](https://opencollective.com/responsively) app while cod
 
 ### What I learned
 
-I learned that sometimes less is more and that I needed to trust CSS Grid and Flexbox for positioning my layout. I found an example where 
-
-To see how you can add code snippets, see below:
+I learned that sometimes less is more and that I needed to trust CSS Grid and Flexbox for positioning my layout. I tend to rely on padding and margin to place elements. I need to practice internalizing positions (absolute and relative) and trusting the power of Grid and Flexbox. I also found an example of how to change the hover color for icons. I used invert color before with an svg. This was useful with an image. I included the code snippet below:
 
 ```css
 img:hover {
@@ -91,9 +89,7 @@ img:hover {
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Position, position, position. That will always be me area for development. I always get caught up in placement and how to organize my page elements. This project was great for reinforcing CSS Grid and Flexbox.
 
 ### Useful resources
 
