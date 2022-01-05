@@ -1,6 +1,6 @@
 header {
-    position: relative;
-    @include flex (column, space-between, center);
+    //position: relative;
+    @include flex (column, flex-start, center);
     height: 80vh;
     min-height: 50rem;
     background-image: url(/assets/images/mobile/image-header.jpg);
@@ -14,6 +14,7 @@ header {
         height: 90vh;
         min-height: 50rem;
         position: relative;
+        padding: 2% 5%;
         background-image: url(/assets/images/desktop/image-header.jpg);
          
     }
@@ -136,49 +137,42 @@ header {
             
         }
     }
-
-
+    
     .home {
-        //@include flex (column, space-between, center);
-        position: absolute;
-        height: 40rem;
-        top: 20%;
-
-        
-
+        @include flex (column, space-between, center);
+        height: 20rem;
 
         .tagline {
-            font-size: 4rem;
+            font-size: 3rem;
             font-family: $header-font-family;
             text-align: center;
-            margin: 5% auto;
             text-transform: uppercase;
+            margin: 20% auto;
             letter-spacing: .5rem;
 
-            @media screen and (min-width: $bp-notebook-start) {
+            @media screen and (min-width: $bp-tablet-end) {
                 font-size: 5.6rem;
-            }  
-
-            
-
+            }
         }
 
         .arrow {
             position: absolute;
             right: 50%;
-            top: 53%;
+            top: 45%;
             transform: translateX(50%);
-            //width: 5rem; 
-              
+            width: 3.5rem;
 
-             @media screen and (max-width: 374px) {
-                 width: 3rem;
-             }
+            @media screen and (max-width: 374px) {
+                width: 2.5rem;
+                top: 55%;
+            }
 
-             @include tablet-breakpoint {
-                 width: 4rem;
-             }
+            @media screen and (min-width: $bp-notebook-start) {
+                width: 4rem;
+            }
         }
     }
+ 
+   
 }
 

@@ -352,6 +352,7 @@ html {
 * {
   margin: 0;
   padding: 0;
+  outline: 1px solid black;
 }
 
 *,
@@ -682,10 +683,9 @@ footer .attribution a {
 }
 
 header {
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   height: 80vh;
   min-height: 50rem;
@@ -701,6 +701,7 @@ header {
     height: 90vh;
     min-height: 50rem;
     position: relative;
+    padding: 2% 5%;
     background-image: url(/assets/images/desktop/image-header.jpg);
   }
 }
@@ -821,19 +822,21 @@ header .navbar .burger-menu {
   }
 }
 header .home {
-  position: absolute;
-  height: 40rem;
-  top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 20rem;
 }
 header .home .tagline {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "Fraunces", serif;
   text-align: center;
-  margin: 5% auto;
   text-transform: uppercase;
+  margin: 20% auto;
   letter-spacing: 0.5rem;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   header .home .tagline {
     font-size: 5.6rem;
   }
@@ -841,15 +844,17 @@ header .home .tagline {
 header .home .arrow {
   position: absolute;
   right: 50%;
-  top: 53%;
+  top: 45%;
   transform: translateX(50%);
+  width: 3.5rem;
 }
 @media screen and (max-width: 374px) {
   header .home .arrow {
-    width: 3rem;
+    width: 2.5rem;
+    top: 55%;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 769px) {
   header .home .arrow {
     width: 4rem;
   }
