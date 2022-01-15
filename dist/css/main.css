@@ -387,7 +387,7 @@ ul {
   visibility: hidden;
   opacity: 1;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 769px) {
   .hidden {
     visibility: visible;
   }
