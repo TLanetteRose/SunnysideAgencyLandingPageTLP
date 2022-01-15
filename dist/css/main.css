@@ -848,7 +848,7 @@ header .home .tagline {
 }
 @media screen and (min-width: 1441px) {
   header .home .tagline {
-    font-size: 5em;
+    font-size: 4em;
   }
 }
 header .home .arrow {
