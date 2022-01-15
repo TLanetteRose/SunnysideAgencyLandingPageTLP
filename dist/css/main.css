@@ -829,7 +829,7 @@ header .home {
   height: 20rem;
 }
 header .home .tagline {
-  font-size: 3rem;
+  font-size: 2em;
   font-family: "Fraunces", serif;
   text-align: center;
   text-transform: uppercase;
@@ -838,7 +838,12 @@ header .home .tagline {
 }
 @media screen and (min-width: 768px) {
   header .home .tagline {
-    font-size: 5.6rem;
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 1441px) {
+  header .home .tagline {
+    font-size: 5em;
   }
 }
 header .home .arrow {
@@ -846,17 +851,22 @@ header .home .arrow {
   right: 50%;
   top: 45%;
   transform: translateX(50%);
-  width: 3.5rem;
+  width: 3rem;
 }
 @media screen and (max-width: 374px) {
   header .home .arrow {
-    width: 2.5rem;
+    width: 2rem;
     top: 55%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header .home .arrow {
+    width: 4rem;
   }
 }
 @media screen and (min-width: 769px) {
   header .home .arrow {
-    width: 4rem;
+    width: 4.5rem;
   }
 }
 
