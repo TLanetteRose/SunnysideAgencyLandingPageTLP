@@ -841,6 +841,11 @@ header .home .tagline {
     font-size: 3em;
   }
 }
+@media screen and (min-width: 1201px) {
+  header .home .tagline {
+    margin: 10% auto;
+  }
+}
 @media screen and (min-width: 1441px) {
   header .home .tagline {
     font-size: 5em;
