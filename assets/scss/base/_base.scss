@@ -41,7 +41,7 @@ ul {
     visibility: hidden;
     opacity: 1;
 
-    @media screen and (min-width: $bp-notebook-end) {
+    @media screen and (min-width: $bp-notebook-start) {
         visibility: visible;
     }
 }
