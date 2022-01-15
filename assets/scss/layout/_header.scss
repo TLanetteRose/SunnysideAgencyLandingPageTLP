@@ -1,17 +1,20 @@
 header {
-    //width: 100%;
-    @include flex (column, space-between, center);
-    min-height: 80vh;
+    //position: relative;
+    @include flex (column, flex-start, center);
+    height: 80vh;
+    min-height: 50rem;
     background-image: url(/assets/images/mobile/image-header.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     color: $color-white;
+    padding: 5% 5%;
 
     @media screen and (min-width: $bp-notebook-end) {
-        //height: 53.8rem;
-        min-height: 100vh;
+        height: 90vh;
+        min-height: 50rem;
         position: relative;
+        padding: 2% 5%;
         background-image: url(/assets/images/desktop/image-header.jpg);
          
     }
@@ -134,95 +137,42 @@ header {
             
         }
     }
-
-
+    
     .home {
         @include flex (column, space-between, center);
-        position: absolute;
         height: 20rem;
-        top: 15rem;
-
-        @media screen and (max-width: 374px) {
-            justify-content: center;
-            top: 10rem;
-        }
-
-        @media screen and (min-width: 375px) and (max-width: 479px) {
-            top: 13rem;
-        }
-
-        @media screen and (min-width: 641px) and (max-width: 768px) {
-            height: 30rem;
-            top: 30rem;
-        }
-        @media screen and (min-width: 480px) and (max-width: 640px){
-            top: 20rem;
-        }
-
-        @include notebook-breakpoint {
-            height: 40rem;
-            top: 40rem;
-        }
-
-        @include lg-desktop-breakpoint {
-            top: 35rem;
-        }
-
-        @include xl-desktop-breakpoint {
-            height: 40rem;
-
-        }
-
-        @include xxl-desktop-breakpoint {
-            height: 50rem;
-            top: 20rem;
-        }
-
 
         .tagline {
-            //font-size: 3.6em;
+            font-size: 3rem;
             font-family: $header-font-family;
             text-align: center;
-            margin: 3rem 1rem;
             text-transform: uppercase;
+            margin: 20% auto;
+            letter-spacing: .5rem;
 
-            @media screen and (max-width: 374px) {
-                font-size: 1.5em;
+            @media screen and (min-width: $bp-tablet-end) {
+                font-size: 5.6rem;
             }
-
-            @media screen and (min-width: 480px) and (max-width: 640px) {
-                font-size: 2.5em;
-            }
-
-             @media screen and (min-width: 641px) and (max-width: 768px){
-                 font-size: 3em;
-             }
-
-            @include notebook-breakpoint {
-                font-size: 3.5em;
-            }
-
-            @include xl-desktop-breakpoint {
-                font-size: 4em;
-            }
-
-            @include xxl-desktop-breakpoint {
-                font-size: 5.4em;
-            }
-
         }
 
         .arrow {
-             width: 5rem;   
+            position: absolute;
+            right: 50%;
+            top: 45%;
+            transform: translateX(50%);
+            width: 3.5rem;
 
-             @media screen and (max-width: 374px) {
-                 width: 3rem;
-             }
+            @media screen and (max-width: 374px) {
+                width: 2.5rem;
+                top: 55%;
+            }
 
-             @include tablet-breakpoint {
-                 width: 4rem;
-             }
+            @media screen and (min-width: $bp-notebook-start) {
+                width: 4rem;
+            }
         }
     }
+ 
+   
 }
 
