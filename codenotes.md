@@ -60,7 +60,10 @@ Morning! My goal is to complete the this project today. I have the gallery and f
 
 It's New Year's Eve. I want to finish this project before tomorrow. So far I have adjusted the sizing in the header home element. I was having a difficult time placing the arrow. Then I realized I should use flex to help with placement and place the whole home element. A new thing I learned: to change the color of icons on hover, use filter: brightness(0) invert(1).
 
-
 ### 01/15/2022
 
-I'm back. It's been awhile since I've coded. Last weekend I was busy working on my websites. 
+I'm back. It's been awhile since I've coded. Last weekend I was busy working on my websites.
+
+### 01/23/2022
+
+Hi again. Adding some last minute touchs. I did the validation, however, I got an error with a div as a child element of a ul.
