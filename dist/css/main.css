@@ -352,7 +352,6 @@ html {
 * {
   margin: 0;
   padding: 0;
-  outline: 1px solid black;
 }
 
 *,
@@ -712,7 +711,6 @@ header .navbar {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
 }
 @media screen and (min-width: 769px) {
   header .navbar {
@@ -720,7 +718,7 @@ header .navbar {
   }
 }
 header .navbar .logo-container {
-  padding: 2rem;
+  padding: 1rem;
 }
 header .navbar .logo-container .logo {
   width: 12.3rem;
@@ -736,12 +734,12 @@ header .navbar .nav-menu {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 85%;
+  width: 100%;
   padding: 2rem;
   opacity: 100%;
   position: absolute;
   top: 8rem;
-  left: calc((100% - 85%) / 2);
+  right: 0;
   z-index: 1;
   background-color: white;
   transition: 200ms ease-in-out;
@@ -764,21 +762,6 @@ header .navbar .nav-menu .nav-item {
 @media screen and (min-width: 769px) {
   header .navbar .nav-menu .nav-item {
     padding: 0.5rem 0.75rem;
-  }
-}
-header .navbar .nav-menu .triangle {
-  position: absolute;
-  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-  background-color: white;
-  width: 10%;
-  right: 0;
-  top: -8%;
-  z-index: -1;
-}
-@media screen and (min-width: 769px) {
-  header .navbar .nav-menu .triangle {
-    display: none;
   }
 }
 header .navbar .nav-menu a {
@@ -811,6 +794,21 @@ header .navbar .nav-menu .contact-link {
     margin-left: 2rem;
     margin: 0;
     background-color: unset;
+  }
+}
+header .navbar .nav-menu .triangle {
+  position: absolute;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background-color: white;
+  width: 10%;
+  right: 0;
+  top: -9%;
+  z-index: -1;
+}
+@media screen and (min-width: 769px) {
+  header .navbar .nav-menu .triangle {
+    display: none;
   }
 }
 header .navbar .burger-menu {
