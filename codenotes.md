@@ -70,4 +70,4 @@ Hi again. Adding some last minute touchs. I did the validation, however, I got a
 
 ### 01/28/2022
 
-Hi. Adding final touches on the hover and focus on the navbar. Everything looks well so far. I just need to check the alt description.
+Hi. Adding final touches on the hover and focus on the navbar. Everything looks well so far. I just need to check the alt description. Need to update Contact button to focus in Safari.
