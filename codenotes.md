@@ -16,7 +16,7 @@ I used an image color picker to add background color to sections that had images
 
 Resources:
 
-- (Image Color Picker )[https://imagecolorpicker.com/]
+- [Image Color Picker](https://imagecolorpicker.com/)
 
 ### 11/05/2021
 
@@ -24,9 +24,9 @@ I'm back. I had parent conferences this week, so my coding time has been less of
 
 Resources:
 
-- (Commonly Used Breakpoints by George Moller)[https://twitter.com/_georgemoller/status/1455958400714555394?s=20]
+- [Commonly Used Breakpoints by George Moller](https://twitter.com/_georgemoller/status/1455958400714555394?s=20)
 
-- (Screen Size Map)[https://screensizemap.com/]: A screen size map that compares viewport sizes in device-independed pixel to plan reponsive and fluid ayouts.
+- [Screen Size Map](https://screensizemap.com/): A screen size map that compares viewport sizes in device-independent pixel to plan reponsive and fluid layouts.
 
 ### 11/06/2021
 
@@ -67,3 +67,7 @@ I'm back. It's been awhile since I've coded. Last weekend I was busy working on 
 ### 01/23/2022
 
 Hi again. Adding some last minute touchs. I did the validation, however, I got an error with a div as a child element of a ul.
+
+### 01/28/2022
+
+Hi. Adding final touches on the hover and focus on the navbar. Everything looks well so far. I just need to check the alt description.
