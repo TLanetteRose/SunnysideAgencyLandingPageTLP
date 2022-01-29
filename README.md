@@ -94,8 +94,7 @@ Position, position, position. That will always be me area for development. I alw
 ### Useful resources
 
 - [PX to EM Converter](https://nekocalc.com/px-to-em-converter) - This helped me to make my font sizes more responsive.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Screen Size Map](https://screensizemap.com/): A screen size map that compares viewport sizes in device-independent pixel to plan reponsive and fluid layouts. I used this resource to help add more breakpoints than I've used before.
 
 ## Author
 
@@ -105,6 +104,7 @@ Position, position, position. That will always be me area for development. I alw
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I referred to the following web designers' code for guidance on this project:
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- [f-llewellyn](https://github.com/f-llewellyn/sunyside-agency)
+- [Koyun92](https://github.com/Koyun92/Landing-page-sunny)

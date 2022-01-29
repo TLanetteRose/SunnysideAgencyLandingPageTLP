@@ -767,15 +767,23 @@ header .navbar .nav-menu .nav-item {
 header .navbar .nav-menu a {
   color: #818498;
   font-size: 1.4em;
+  padding: 0.75rem 1rem;
+  border-radius: 3rem;
+}
+header .navbar .nav-menu a:hover, header .navbar .nav-menu a:focus {
+  background-color: #fad400;
+  color: #23303e;
 }
 @media screen and (min-width: 769px) {
   header .navbar .nav-menu a {
     font-size: 1.2em;
     color: white;
-    padding: 0.75rem 1rem;
-    border-radius: 3rem;
   }
-  header .navbar .nav-menu a:hover, header .navbar .nav-menu a:focus {
+  header .navbar .nav-menu a:hover {
+    background-color: #8bd9ff;
+    color: white;
+  }
+  header .navbar .nav-menu a:focus {
     background-color: white;
     color: #23303e;
   }
@@ -783,8 +791,7 @@ header .navbar .nav-menu a {
 header .navbar .nav-menu .contact-link {
   margin-top: 0.5rem;
   font-family: "Fraunces", serif;
-  background-color: #fad400;
-  padding: 0.75rem 1rem;
+  padding: 2rem;
   border-radius: 3rem;
   cursor: pointer;
   text-transform: uppercase;
