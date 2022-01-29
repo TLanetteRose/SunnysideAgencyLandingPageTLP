@@ -791,7 +791,7 @@ header .navbar .nav-menu a:hover, header .navbar .nav-menu a:focus {
 header .navbar .nav-menu .contact-link {
   margin-top: 0.5rem;
   font-family: "Fraunces", serif;
-  padding: 0.75rem 1rem;
+  padding: 2rem;
   border-radius: 3rem;
   cursor: pointer;
   text-transform: uppercase;
