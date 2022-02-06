@@ -63,8 +63,8 @@ I used the [Responsively](https://opencollective.com/responsively) app while cod
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Sunnyside Agency Landing Page](https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-wsass-and-vanilla-js-8YYer3Jil)
+- Live Site URL: [Sunnyside Agency Landing Page](https://sunnyside-agency-landing-page-tlp.vercel.app/)
 
 ## My process
 
@@ -98,7 +98,7 @@ Position, position, position. That will always be me area for development. I alw
 
 ## Author
 
-- Website - [T.Lanette Pollard](https://tlp-portfolio.vercel.app/)
+- Website - [T.Lanette Pollard](https://tlp-portfolio.vercel.app/); Work in Progress.
 - Frontend Mentor - [@TLanetteRose](https://www.frontendmentor.io/profile/TLanetteRose)
 - Twitter - [@TpLanetteNBCT](https://twitter.com/TpLanetteNBCT)
 
