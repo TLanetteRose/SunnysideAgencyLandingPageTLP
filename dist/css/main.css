@@ -819,8 +819,8 @@ header .navbar .nav-menu .triangle {
   }
 }
 header .navbar .burger-menu {
-  border: transparent;
-  background-color: transparent;
+  border: none;
+  background: none;
 }
 @media screen and (min-width: 769px) {
   header .navbar .burger-menu {
