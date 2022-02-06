@@ -819,12 +819,16 @@ header .navbar .nav-menu .triangle {
   }
 }
 header .navbar .burger-menu {
-  cursor: pointer;
+  border: transparent;
+  background-color: transparent;
 }
 @media screen and (min-width: 769px) {
   header .navbar .burger-menu {
     display: none;
   }
+}
+header .navbar .burger-menu .menu-icon {
+  cursor: pointer;
 }
 header .home {
   display: flex;
