@@ -48,7 +48,6 @@ header {
             position: absolute;
             top: 8rem;
             right: 0;
-            //left: calc((100% - 95%) / 2);
             z-index: 1;
             background-color: $color-white;
             transition: 200ms ease-in-out;
@@ -139,12 +138,17 @@ header {
 
         }
         
+        
         .burger-menu {
-            cursor: pointer;
-            
+            border: transparent;
+            background-color: transparent;
             
             @media screen and (min-width: $bp-notebook-start) {
                 display: none;
+            }
+
+            .menu-icon {
+                cursor: pointer;
             }
             
         }
