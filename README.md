@@ -98,7 +98,7 @@ Position, position, position. That will always be me area for development. I alw
 
 ## Author
 
-- Website - [T.Lanette Pollard](https://tlp-portfolio.vercel.app/)
+- Website - [T.Lanette Pollard](https://tlp-portfolio.vercel.app/); Work in Progress.
 - Frontend Mentor - [@TLanetteRose](https://www.frontendmentor.io/profile/TLanetteRose)
 - Twitter - [@TpLanetteNBCT](https://twitter.com/TpLanetteNBCT)
 
