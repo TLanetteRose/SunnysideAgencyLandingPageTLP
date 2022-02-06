@@ -63,8 +63,8 @@ I used the [Responsively](https://opencollective.com/responsively) app while cod
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Sunnyside Agency Landing Page](https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-wsass-and-vanilla-js-8YYer3Jil)
+- Live Site URL: [Sunnyside Agency Landing Page](https://sunnyside-agency-landing-page-tlp.vercel.app/)
 
 ## My process
 
