@@ -140,8 +140,8 @@ header {
         
         
         .burger-menu {
-            border: transparent;
-            background-color: transparent;
+            border: none;
+            background: none;
             
             @media screen and (min-width: $bp-notebook-start) {
                 display: none;
